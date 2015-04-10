@@ -593,5 +593,60 @@ public static class MyClass
 }
 ", 1);
 		}
+
+		[Test]
+		public void TestUnusedWithComplexGraphAndAssignment()
+		{
+			Test<RedundantAssignmentIssue>(@"using System;
+public static class MyClass
+{
+	public static bool bar;
+	public static int[] array;
+	public static void Foo ()
+	{
+	}
+	public static void Main ()
+	{
+		int o;
+		if (bar) o = 1;
+		else
+		{
+			o = 1;
+			Console.WriteLine(o);
+		}
+		if (bar) Foo ();
+		if (bar) Foo ();
+		if (bar) Foo ();
+		if (bar) Foo ();
+		if (bar) Foo ();
+		if (bar) Foo ();
+		if (bar) Foo ();
+		if (bar) Foo ();
+		if (bar) Foo ();
+		if (bar) Foo ();
+		if (bar) Foo ();
+		if (bar) Foo ();
+		if (bar) Foo ();
+		if (bar) Foo ();
+		if (bar) Foo ();
+		if (bar) Foo ();
+		if (bar) Foo ();
+		if (bar) Foo ();
+		if (bar) Foo ();
+		if (bar) Foo ();
+		if (bar) Foo ();
+		if (bar) Foo ();
+		if (bar) Foo ();
+		if (bar) Foo ();
+		if (bar) Foo ();
+		if (bar) Foo ();
+		if (bar) Foo ();
+		foreach(var x in array)
+			Foo ();
+	}
+}
+", 1);
+		}
+	}
 	}
 }
