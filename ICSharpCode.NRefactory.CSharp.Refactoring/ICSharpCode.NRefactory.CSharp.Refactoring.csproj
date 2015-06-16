@@ -191,7 +191,6 @@
     <Compile Include="CodeIssues\GatherVisitorBase.cs" />
     <Compile Include="CodeIssues\IssueCategories.cs" />
     <Compile Include="CodeIssues\NotWorking\AccessToClosureIssues\AccessToClosureIssue.cs" />
-    <Compile Include="CodeIssues\NotWorking\AccessToClosureIssues\AccessToDisposedClosureIssue.cs" />
     <Compile Include="CodeIssues\NotWorking\AccessToClosureIssues\AccessToModifiedClosureIssue.cs" />
     <Compile Include="CodeIssues\NotWorking\AccessToClosureIssues\LocalVariableNamePicker.cs" />
     <Compile Include="CodeIssues\NotWorking\DuplicateBodyMethodIssue.cs" />
@@ -425,7 +424,6 @@
     <Compile Include="CodeIssues\Custom\CheckNamespaceIssue.cs" />
     <Compile Include="CodeIssues\Custom\CastExpressionOfIncompatibleTypeIssue.cs" />
     <Compile Include="CodeIssues\Custom\CompilerErrors\ExpressionIsNeverOfProvidedTypeIssue.cs" />
-    <Compile Include="CodeIssues\Custom\RedundantAssignmentIssue.cs" />
     <Compile Include="CodeIssues\Custom\UnreachableCodeIssue.cs" />
     <Compile Include="CodeIssues\Synced\PracticesAndImprovements\ReplaceWithSingleCallToMinIssue.cs" />
     <Compile Include="CodeIssues\Synced\PracticesAndImprovements\ReplaceWithSingleCallToMaxIssue.cs" />
